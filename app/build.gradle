@@ -24,3 +24,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.github.markushi:circlebutton:1.1'
 }
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.etsy.android.grid:library:1.0.5' // read below comment
+}

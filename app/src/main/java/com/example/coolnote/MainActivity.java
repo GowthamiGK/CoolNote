@@ -20,6 +20,8 @@ import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.etsy.android.grid.StaggeredGridView;
+
 
 public class MainActivity extends ActionBarActivity
 implements LoaderManager.LoaderCallbacks<Cursor>
@@ -34,7 +36,8 @@ implements LoaderManager.LoaderCallbacks<Cursor>
 
         cursorAdapter = new NotesCursorAdapter(this, null, 0);
 
-        GridView list = (GridView) findViewById(R.id.gridView);
+       // GridView list = (GridView) findViewById(R.id.gridView);
+        StaggeredGridView list = (StaggeredGridView) findViewById(R.id.grid_view);
         list.setAdapter(cursorAdapter);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
