@@ -1,0 +1,2 @@
+# CoolNote
+Making notes
