@@ -28,7 +28,7 @@ public class DBOpenHelper extends SQLiteOpenHelper{ // SQLiteOpenHelper is a mem
                     ")";
 
     public DBOpenHelper(Context context) {  // Constructor method
-        super(context, DATABASE_NAME, null, DATABASE_VERSION // (context, name, factory, version)!
+        super(context, DATABASE_NAME, null, DATABASE_VERSION); // (context, name, factory, version)!
     }
 
     @Override

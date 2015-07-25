@@ -14,6 +14,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.CursorAdapter;
 import android.widget.GridView;
@@ -28,7 +30,6 @@ implements LoaderManager.LoaderCallbacks<Cursor>
 {
     private static final int EDITOR_REQUEST_CODE = 1001;
     private CursorAdapter cursorAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,12 +41,16 @@ implements LoaderManager.LoaderCallbacks<Cursor>
         StaggeredGridView list = (StaggeredGridView) findViewById(R.id.grid_view);
         list.setAdapter(cursorAdapter);
 
+        Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fly_in_from_top_corner);
+        list.setAnimation(anim);
+        anim.start();
+
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, EditorActivity.class);
                 Uri uri = Uri.parse(NotesProvider.CONTENT_URI + "/" + id);
-                intent.putExtra(NotesProvider.CO    NTENT_ITEM_TYPE, uri);
+                intent.putExtra(NotesProvider.CONTENT_ITEM_TYPE, uri);
                 startActivityForResult(intent, EDITOR_REQUEST_CODE);
             }
         });

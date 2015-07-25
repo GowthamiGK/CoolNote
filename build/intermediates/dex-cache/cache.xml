@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/exploded-aar/com.etsy.android.grid/library/1.0.5/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="8218789edb56bdcfff7da48e892b37460fc707e2">
-        <dex dex="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/pre-dexed/debug/classes-6347ce3d348bd5fc7ceac6a0a82b2f1490c86888.jar" />
-    </item>
-    <item
-        jar="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jar="F:\Android\Artoo\CoolNote\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/pre-dexed/debug/classes-f6d6c485b8389b2beacb954a5741e1a6a973deda.jar" />
+        <dex dex="F:\Android\Artoo\CoolNote\app\build\intermediates\pre-dexed\debug\classes-c538e0d1d6d0ee6f676220772ef74c8c02217436.jar" />
     </item>
     <item
-        jar="/home/tejovanth/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jar="F:\Android\Artoo\CoolNote\app\build\intermediates\exploded-aar\com.etsy.android.grid\library\1.0.5\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="8218789edb56bdcfff7da48e892b37460fc707e2">
+        <dex dex="F:\Android\Artoo\CoolNote\app\build\intermediates\pre-dexed\debug\classes-79b97ae19c71ef94a3a8f51fdf06cf630754eda1.jar" />
+    </item>
+    <item
+        jar="C:\Users\IndiumGlobal\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-9b18191fc5a2e0dcdc77ce34d7872d4d60bfe5b0.jar" />
+        <dex dex="F:\Android\Artoo\CoolNote\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-cf1f45d2143777fe5824a07df6fb67192f92a84c.jar" />
     </item>
     <item
-        jar="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/exploded-aar/com.github.markushi/circlebutton/1.1/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
-        <dex dex="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/pre-dexed/debug/classes-e8c54bdb52528c84eba798f2b7959934f7fd900d.jar" />
-    </item>
-    <item
-        jar="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/pre-dexed/debug/classes-960ff86fc4e92566dae50294ed3ba5280b93555b.jar" />
-    </item>
-    <item
-        jar="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jar="F:\Android\Artoo\CoolNote\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-659d148e5235bb239107dc04d6b9cbfee29ae669.jar" />
+        <dex dex="F:\Android\Artoo\CoolNote\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-cf8d09cc3c30eedbf47930054bbe1fd5d64cf4e3.jar" />
+    </item>
+    <item
+        jar="F:\Android\Artoo\CoolNote\app\build\intermediates\exploded-aar\com.github.markushi\circlebutton\1.1\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
+        <dex dex="F:\Android\Artoo\CoolNote\app\build\intermediates\pre-dexed\debug\classes-32ea33d4fd2db421b07058eea36f5a96cfaec045.jar" />
+    </item>
+    <item
+        jar="F:\Android\Artoo\CoolNote\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="F:\Android\Artoo\CoolNote\app\build\intermediates\pre-dexed\debug\classes-d105cbd394c24e202557f57cc250ed405fdc56ca.jar" />
     </item>
 
 </items>

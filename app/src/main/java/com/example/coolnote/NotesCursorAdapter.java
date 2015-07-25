@@ -39,9 +39,11 @@ public class NotesCursorAdapter extends CursorAdapter{
         TextView tv = (TextView) view.findViewById(R.id.tvNote);
         tv.setText(noteText);
 
-        Random rnd = new Random();
+        /*Random rnd = new Random();
         int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
-        view.setBackgroundColor(color);
+        view.setBackgroundColor(color);*/
+
+
 
     }
 }
