@@ -45,7 +45,7 @@ implements LoaderManager.LoaderCallbacks<Cursor>
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, EditorActivity.class);
                 Uri uri = Uri.parse(NotesProvider.CONTENT_URI + "/" + id);
-                intent.putExtra(NotesProvider.CONTENT_ITEM_TYPE, uri);
+                intent.putExtra(NotesProvider.CO    NTENT_ITEM_TYPE, uri);
                 startActivityForResult(intent, EDITOR_REQUEST_CODE);
             }
         });
@@ -55,9 +55,9 @@ implements LoaderManager.LoaderCallbacks<Cursor>
     }
 
     private void insertNote(String noteText) {
-        ContentValues values = new ContentValues();
-        values.put(DBOpenHelper.NOTE_TEXT, noteText);
-        Uri noteUri = getContentResolver().insert(NotesProvider.CONTENT_URI,
+        ContentValues values = new ContentValues();  // ContentValues is the member of the content android content.
+        values.put(DBOpenHelper.NOTE_TEXT, noteText); 
+        Uri noteUri = getContentResolver().insert(NotesProvider.CONTENT_URI, // getContentResolver has many methods, here we are using insert
                 values);
     }
 
@@ -125,9 +125,9 @@ implements LoaderManager.LoaderCallbacks<Cursor>
     }
 
     private void insertSampleData() {
-        insertNote("Simple note");
-        insertNote("Multi-line\nnote");
-        insertNote("Very long note with a lot of text that exceeds the width of the screen");
+        insertNote("Artoo");
+        insertNote("Artoo is helping raise their customers out of poverty \n yay ");
+        insertNote(" Artoo's idea of transforming the way financial institutions help these downtrodden is also praiseworthy");
         restartLoader();
     }
 

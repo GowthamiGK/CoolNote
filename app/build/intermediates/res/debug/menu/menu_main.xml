@@ -20,4 +20,4 @@
         android:title="@string/delete_all_notes"
         app:showAsAction="ifRoom" />
 </menu>
-<!-- From: file:/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/src/main/res/menu/menu_main.xml -->
+<!-- From: file:/F:/Android/Artoo/CoolNote/app/src/main/res/menu/menu_main.xml -->

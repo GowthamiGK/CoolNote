@@ -8,11 +8,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 
 import com.example.coolnote.DBOpenHelper;
-
+// To provide access to the database with rest of the application. has methods to insert, update, deleting and querying.
 public class NotesProvider extends ContentProvider{
 
-    private static final String AUTHORITY = "com.example.coolnote.notesprovidernew";
-    private static final String BASE_PATH = "notes";
+    private static final String AUTHORITY = "com.example.coolnote.notesprovidernew"; // globally unique
+    private static final String BASE_PATH = "notes"; //name of the table, represents the entire database.
     public static final Uri CONTENT_URI =
             Uri.parse("content://" + AUTHORITY + "/" + BASE_PATH );
 
@@ -20,14 +20,14 @@ public class NotesProvider extends ContentProvider{
     private static final int NOTES = 1;
     private static final int NOTES_ID = 2;
 
-    private static final UriMatcher uriMatcher =
+    private static final UriMatcher uriMatcher =    //(UriMatcher is the datatype) , To tell which operation has been requested.
             new UriMatcher(UriMatcher.NO_MATCH);
 
     public static final String CONTENT_ITEM_TYPE = "Note";
 
     static {
-        uriMatcher.addURI(AUTHORITY, BASE_PATH, NOTES);
-        uriMatcher.addURI(AUTHORITY, BASE_PATH +  "/#", NOTES_ID);
+        uriMatcher.addURI(AUTHORITY, BASE_PATH, NOTES); 
+        uriMatcher.addURI(AUTHORITY, BASE_PATH +  "/#", NOTES_ID); // # --> wild card, any number 
     }
 
     private SQLiteDatabase database;
@@ -35,7 +35,7 @@ public class NotesProvider extends ContentProvider{
     @Override
     public boolean onCreate() {
 
-        DBOpenHelper helper = new DBOpenHelper(getContext());
+        DBOpenHelper helper = new DBOpenHelper(getContext()); 
         database = helper.getWritableDatabase();
         return true;
     }
@@ -49,7 +49,7 @@ public class NotesProvider extends ContentProvider{
 
         return database.query(DBOpenHelper.TABLE_NOTES, DBOpenHelper.ALL_COLUMNS,
                 selection, null, null, null,
-                DBOpenHelper.NOTE_CREATED + " DESC");
+                DBOpenHelper.NOTE_CREATED + " DESC"); // return data in descending order
     }
 
     @Override

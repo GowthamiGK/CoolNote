@@ -21,4 +21,4 @@
         android:hint="@string/enter_note_here"
         android:inputType="textMultiLine|textCapSentences"/>
 </RelativeLayout>
-<!-- From: file:/home/tejovanth/Dropbox/codes/android/Try/CoolNote/app/src/main/res/layout/activity_editor.xml -->
+<!-- From: file:/F:/Android/Artoo/CoolNote/app/src/main/res/layout/activity_editor.xml -->
